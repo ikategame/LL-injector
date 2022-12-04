@@ -67,7 +67,7 @@ int main()
         Sleep(2000);
         return 0;
     }
-       
+
 
 
     while (!proc_id)
@@ -96,5 +96,7 @@ int main()
     }
 
     if (h_proc) CloseHandle(h_proc);
+    std::cout << "Successfully injected\n";
+    Sleep(1000);
     return 0;
 }
